@@ -95,9 +95,34 @@ input {
   padding-bottom: 94px;
 }
 
-.customers-list, .features-list, .product-list, .portfolio-list, .team-list {
+.customers-list, .features-list, .product-list, .team-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+  --title-text-color: #212121;
+  --logo-color: #000000;
+  --discription-text-color: #757575;
+  --accent-color: #2196f3;
+  --background-color: #2f303a;
+  --white-text-back-color: #ffffff;
+  --back-team-color: #f5f4fa;
+  --icon-fill-color: #afb1b8;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .backdrop {
@@ -778,6 +803,11 @@ input {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list {
   margin-top: 50px;
 }
 
@@ -800,7 +830,8 @@ input {
   position: relative;
 }
 
-.portfolio-list__link:hover, .portfolio-list__link:focus {
+.portfolio-list__link:hover,
+.portfolio-list__link:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -899,30 +930,5 @@ input {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--discription-text-color);
-}
-
-:root {
-  --main-font: "Roboto", sans-serif;
-  --logo-font: "Raleway", sans-serif;
-  --title-text-color: #212121;
-  --logo-color: #000000;
-  --discription-text-color: #757575;
-  --accent-color: #2196f3;
-  --background-color: #2f303a;
-  --white-text-back-color: #ffffff;
-  --back-team-color: #f5f4fa;
-  --icon-fill-color: #afb1b8;
-}
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
