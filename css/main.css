@@ -95,7 +95,7 @@ input {
   padding-bottom: 94px;
 }
 
-.customers-list, .features-list, .product-list, .team-list {
+.customers-list, .features-list, .product-list, .portfolio-list, .team-list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -803,11 +803,6 @@ input {
 }
 
 .portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.portfolio-list {
   margin-top: 50px;
 }
 
@@ -827,12 +822,11 @@ input {
 }
 
 .portfolio-list__link {
-  position: relative;
+  display: block;
 }
 
-.portfolio-list__link:hover,
-.portfolio-list__link:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.portfolio-list__link:hover, .portfolio-list__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-link__overlay {
