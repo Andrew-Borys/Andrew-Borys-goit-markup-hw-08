@@ -1,20 +1,48 @@
-// .logo {
-//   color: var(--accent-color);
-//   font-family: var(--logo-font);
-//   @include font(700, 26px, 1.19);
+@media screen and (max-width: 767px) {
+  .logo {
+    &__header {
+      @include font(700, 24px, 2);
+      color: var(--accent-color);
+    }
+    &__studio-header {
+      color: var(--logo-color);
+    }
+  }
+}
 
-//   &__header {
-//     padding-top: 24px;
-//     padding-bottom: 25px;
-//   }
-//   &__studio-header {
-//     color: var(--logo-color);
-//   }
-//   &__footer {
-//     display: block;
-//     margin-bottom: 20px;
-//   }
-//   &__studio-footer {
-//     color: var(--white-text-back-color);
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    &__header {
+      @include font(700, 24px, 2);
+      color: var(--accent-color);
+    }
+    &__studio-header {
+      color: var(--logo-color);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    color: var(--accent-color);
+    font-family: var(--logo-font);
+    @include font(700, 26px, 1.19);
+
+    &__header {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+    &__studio-header {
+      color: var(--logo-color);
+    }
+    &__footer {
+      display: block;
+      margin-bottom: 20px;
+    }
+    &__studio-footer {
+      color: var(--white-text-back-color);
+    }
+  }
+}
