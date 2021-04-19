@@ -1,6 +1,10 @@
 .product-list {
   @extend %flex-container;
 
+  @media screen and (min-width: 1199px) {
+    display: none;
+  }
+
   &__item {
     position: relative;
 
