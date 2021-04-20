@@ -39,17 +39,11 @@
 @media screen and (max-width: 479px) {
   .modal {
     width: 100%;
-    font-size: 3vw;
+    overflow: auto;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .modal {
     width: 450px;
   }

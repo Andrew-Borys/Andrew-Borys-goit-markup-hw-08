@@ -272,6 +272,12 @@ input {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .modal-form__field:focus-within {
+    color: var(--accent-color);
+  }
+}
+
 .modal-form__input-area {
   padding-left: 42px;
   width: 100%;
@@ -343,9 +349,9 @@ input {
   font-size: 12px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 420px) {
   .modal-form__check-desk {
-    font-size: 14px;
+    font-size: 8px;
   }
 }
 
@@ -372,6 +378,13 @@ input {
 
 .modal-form__form-term:focus + .modal-form__check-desk::before {
   outline: 2px solid var(--accent-color);
+}
+
+@media screen and (max-width: 370px) {
+  .modal-form__check-desk::before {
+    width: 13px;
+    height: 13px;
+  }
 }
 
 .modal {
@@ -415,17 +428,11 @@ input {
 @media screen and (max-width: 479px) {
   .modal {
     width: 100%;
-    font-size: 3vw;
+    overflow: auto;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .modal {
     width: 450px;
   }
