@@ -36,9 +36,16 @@
   pointer-events: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .modal {
-    max-width: 450px;
+    width: 100%;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
   }
 }
 
