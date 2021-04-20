@@ -1048,7 +1048,6 @@ input {
 .burger-icon {
   width: 40px;
   height: 40px;
-  fill: var(--accent-color);
 }
 
 .mobile-menu {
