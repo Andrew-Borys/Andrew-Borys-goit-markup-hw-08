@@ -140,6 +140,12 @@
     display: none;
   }
 }
+.burger-btn:focus,
+.burger-btn:hover,
+.mobile-menu__close-icon:focus,
+.mobile-menu__close-icon:hover {
+  fill: var(--accent-color);
+}
 
 .burger-icon {
   width: 40px;
