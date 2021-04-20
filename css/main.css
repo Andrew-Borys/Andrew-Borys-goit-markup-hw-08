@@ -1168,7 +1168,9 @@ input {
 }
 
 .mobile-social-list__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-social-list__link {
