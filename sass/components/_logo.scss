@@ -1,5 +1,6 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .logo {
+    &__footer,
     &__header {
       @include font(700, 24px, 2);
       color: var(--accent-color);
@@ -7,13 +8,19 @@
     &__studio-header {
       color: var(--logo-color);
     }
+    &__studio-footer {
+      color: var(--white-text-back-color);
+    }
   }
+}
+.logo__footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .logo {
-    padding-top: 13px;
-    padding-bottom: 13px;
     &__header {
       @include font(700, 24px, 2);
       color: var(--accent-color);
@@ -44,5 +51,9 @@
     &__studio-footer {
       color: var(--white-text-back-color);
     }
+  }
+
+  .footer-subscribe {
+    margin-left: auto;
   }
 }
