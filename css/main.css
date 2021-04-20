@@ -253,13 +253,19 @@ input {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  letter-spacing: 0.03em;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .modal-form__field {
   position: relative;
   margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--discription-text-color);
 }
 
 .modal-form__input-title {
