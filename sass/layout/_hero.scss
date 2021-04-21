@@ -86,8 +86,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hero__title {
+    @include font(900, 44px, 1.36, 0.06em);
+    max-width: 696px;
+  }
   .hero {
-    @include font(900, 26px, 1.62, 0.06em);
     max-width: 1600px;
     background: rgba(47, 48, 58, 0.4);
     background-image: linear-gradient(

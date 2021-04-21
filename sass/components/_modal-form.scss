@@ -107,14 +107,17 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 398px) {
+  .modal-form__check-desk {
+    font-size: 8px;
+  }
+}
+
 .modal-form__check-desk {
   display: flex;
   align-items: center;
   margin-top: 10px;
   font-size: 12px;
-  @media screen and (max-width: 420px) {
-    font-size: 8px;
-  }
 
   &::before {
     display: block;
